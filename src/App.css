@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@1,400;1,700&family=Poppins:wght@400;600&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.App {
+  position: fixed;
+  background-color: #FFFFFF;
+  margin: 40px 0px !important;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y: auto !important;
+  align-content: flex-start;
+}
+
+.footer {
+  background-color: #F9F9F9;
+  padding: 5px;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-align: left;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 25px;
+  align-items: center;
+  z-index: 1100
+}
+.header {
+  background-color: #082478 !important;
+  height: 50px !important;
+}
+.logoNav{
+  width: 33px;
+  height: 32px;
+}
+.h1logo{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  line-height: 30px;
+
+}
+.divLogo{
+  display:flex;
+  align-items:center;
+  gap:17px 
+}
+.logoPais{
+  width: 33px;
+  height: 33px;
+}
+.pAdministracion{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  line-height: 30px;
+}
+.divContainLogo{
+  display: flex;
+  align-items: center;
+}
+.pUniversidad{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  line-height: 30px;
+}
+.log{
+  position: absolute;
+  left: 15%;
+  top:5.6px;
+  z-index: 123123123;
+  width: 24px;
+  height: 24px;
+  top:7px;
+  
+}
+.divpUniversidad{
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.countrySelect div{
+  border-radius: 30px;
+  background-color: #082478;
+  padding: 0px 0px !important;
+}
+.countrySelect div fieldset{
+  border: none;
+  outline: none;
+}
+.countrySelect div div{ 
+  top:calc( 50% - 18px );
+}
+.countrySelect div div div{ 
+  right: 14px !important;
+  width: 24px;
+  height: 24px;
+}
+.containerDerecha{
+  display: flex;
+  align-items: center;
+}
+.avatar{
+  width: 34px !important;
+  height: 34px !important;
+}
+.avatarContainer{
+  background-color: #082478 !important;
+  box-shadow: none !important;
+  border: none !important;
+  gap:8px;
+  min-width: 0px !important;
+
+}
+.countrySelect div input{
+  margin-left: 33% !important;
+}
+
+.opcionTextField div{
+    background-color: white;
+    width: 100%;
+}
+.opcionTextField input{
+  margin-top: 5px;
+}
+.opcionTextField div:hover{
+  background-color: white;
+}
+.opcionTextField div:focus{
+  background-color: white;
+}
+.opcionTextField div:active{
+  background-color: white;
+}
+tr:hover{
+  background-color: rgba(8, 36, 120, 0.12) !important;
+}
+
+
+.css-10ywl2z-MuiGrid-root{
+  overflow-y: auto !important;
+  max-height: 800px;
+}
+
+@media all and (min-width:1600px){
+  .header {
+     height: 52px !important;
+  }
+  .logoNav{
+    width: 38px;
+    height: 37px;
+  }     
+  .pAdministracion{
+    font-size: 20px;
+  }
+  .pUniversidad{
+    font-size: 20px;
+  }
+  .logoPais{
+    width: 38px;
+    height: 38px;
+  }
+  .countrySelect div input{
+    font-size: 16px;
+    margin-left: 30% !important;
+  }
+  .log{
+    width: 24px;
+    height: 24px;
+    top:7px;
+  }
+  .countrySelect{
+    width: 100% !important;
+  }
+  .countrySelect div{
+
+    padding: 0px !important;
+  }
+ 
+  .countrySelect div div{ 
+    top:calc( 50% - 19px );
+  }
+  .countrySelect div div div{ 
+    right: 6px !important;
+    width: 28px;
+    height:28px;
+  }
+ 
+  .avatar{
+    width: 42px !important;
+    height: 42px !important;
+  }
+  .avatarContainer{
+    gap:12px;
+  }
+  .containerDerecha{
+    gap:10px
+  }
+}
+@media all and (max-width:700px){
+  .header {
+     height: 40px !important;
+  }
+  .logoNav{
+    width: 22px;
+    height: 21px;
+  }     
+  .divLogo{
+    gap:'10px' 
+  }
+  .h1logo{
+    font-size: 16px;
+  }
+  .pAdministracion{
+    display:none
+  }
+  .pUniversidad{
+    display:none
+  }
+  .logoPais{
+    width: 24px;
+    height: 24px;
+  }
+  .countrySelect div input{
+    font-size: 14px;
+    margin-left: 30% !important;
+  }
+  .log{
+    width: 22px;
+    height: 22px;
+    top:6px;
+  }
+ 
+  .countrySelect div{
+
+    padding: 0px 0px !important;
+  }
+  .countrySelect button{
+    width:10px !important;
+    height: 10px !important;
+  }
+  .countrySelect div div{ 
+    top:calc( 50% - 14px );
+  }
+  .countrySelect div div div{ 
+    right: 10px !important;
+  }
+
+  .countrySelect div div div{ 
+    width: 10px;
+    height: 10px;
+  }
+  .avatar{
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .avatarContainer{
+    background-color: #082478 !important;
+    gap:4px;
+  
+  }
+  .confirmButton{
+    flex-direction: column;
+  }
+  .confirmButton button{
+    font-size: 10px;
+  }
+  .css-lc1cih-MuiGrid-root{
+    flex-direction: column !important;
+  }
+}
+
+
+
+
+
+
+
+.react-toast-notifications__toast__icon {
+  display: none !important
+}
+
+.react-toast-notifications__container, .react-toast-notifications__toast {
+  z-index: 10000 !important;
+}
+
+.react-toast-notifications__toast__icon-wrapper {
+  width: 50px !important;
+}
+
+.react-toast-notifications__toast {
+  font-family: roboto !important;
+  background-color: #FFF !important;
+  color: #4A4B4C !important;
+}
+
+.react-toast-notifications__toast.react-toast-notifications__toast--success .react-toast-notifications__toast__icon-wrapper {
+  background-image: url('./Activos/Notificaciones/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.react-toast-notifications__toast.react-toast-notifications__toast--error .react-toast-notifications__toast__icon-wrapper {
+  background-color: #B00020 !important;
+  background-image: url('./Activos/Notificaciones/error.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFF !important;
+}
+
+.react-toast-notifications__toast.react-toast-notifications__toast--warning .react-toast-notifications__toast__icon-wrapper {
+  background-image: url('./Activos/Notificaciones/warning.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
